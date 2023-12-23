@@ -48,4 +48,4 @@ enum HttpStatusCode {
 
 
 
-export default HttpStatusCode;
+export { HttpStatusCode };

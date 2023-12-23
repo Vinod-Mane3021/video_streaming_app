@@ -17,14 +17,8 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // route import
-
-
-
+import router from "./routes/index";
 // route declarations
-
-
+app.use("/api/v1", router)
 
 export default app;
-
-
-
