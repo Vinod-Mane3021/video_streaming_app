@@ -14,4 +14,22 @@ const findUserByEmailOrUsername = (
     })
 }
 
-export { findUserById, findUserByEmailOrUsername }
+const createUser = (
+    fullName: string,
+    email: string,
+    username: string,
+    password: string,
+    avatar: string,
+    coverImage: string
+) => {
+    return UserModel.create({
+        fullName: fullName,
+        email: email,
+        username: username.toLowerCase(),
+        password: password,
+        avatar: avatar,
+        coverImage: coverImage
+    })
+}
+
+export { findUserById, findUserByEmailOrUsername, createUser }

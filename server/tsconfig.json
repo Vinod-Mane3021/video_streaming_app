@@ -7,5 +7,5 @@
         "sourceMap": true,
         "noImplicitAny": true,
     },
-    "include": ["src/**/*.ts"],
+    "include": ["src/**/*.ts", "src/controller/user.controller.ts"],
 }
